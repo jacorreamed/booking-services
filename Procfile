@@ -1,0 +1,1 @@
+web: node packages/api-gateway/src/index.js
