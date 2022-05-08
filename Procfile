@@ -1,1 +1,1 @@
-web: node packages/api-gateway/src/index.js
+web: nodemon packages/api-gateway/src/index.js
