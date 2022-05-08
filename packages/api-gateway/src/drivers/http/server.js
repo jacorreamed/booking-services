@@ -41,7 +41,7 @@ fastify.register(Autoload, { dir: path.join(__dirname, 'plugins') });
 
 async function start() {
   try {
-    await fastify.listen(process.env.PORT || 5000, '0.0.0.0');
+    await fastify.listen(process.env.PORT || 3000, '0.0.0.0');
   } catch (error) {
     fastify.log.error(
       `[http-server]: Error with message ${error.message} has happened`,
