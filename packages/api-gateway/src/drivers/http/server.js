@@ -33,7 +33,7 @@ fastify.register(FastifyAuth0, {
 fastify.decorate('hasPermissions', authDecorators.hasPermissions);
 fastify.decorate('hasRole', authDecorators.hasRole);
 fastify.register(require('@fastify/cors'), { 
-  origin:"localhost:3000",
+  origin:true
 })
 
 fastify.register(Autoload, {
