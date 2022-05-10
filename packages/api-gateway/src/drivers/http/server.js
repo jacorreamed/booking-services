@@ -32,6 +32,9 @@ fastify.register(FastifyAuth0, {
 // Decorators for authorization
 fastify.decorate('hasPermissions', authDecorators.hasPermissions);
 fastify.decorate('hasRole', authDecorators.hasRole);
+fastify.register(require('@fastify/cors'), { 
+  origin:"localhost:3000",
+})
 
 fastify.register(Autoload, {
   dir: path.join(__dirname, 'routes'),
