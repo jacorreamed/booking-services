@@ -6,7 +6,7 @@ const getAdmins = (profile, fullName) => {
   fakeAdminList = fakeAdminList.filter((user) => user.profile === 3 || user.profile === 4);
 
   if (profile) {
-    fakeAdminList = fakeAdminList.filter((admin) => admin.profile === profile);
+    fakeAdminList = fakeAdminList.filter((admin) => admin.userType === profile);
   }
   if (fullName) {
     fakeAdminList = fakeAdminList.filter((admin) => admin.fullName.search(fullName) >= 0);

@@ -5,7 +5,7 @@ const adminList = [
     id: 1,
     fullName: faker.name.findName(),
     urlImage: faker.image.avatar(),
-    profile: 2,
+    userType: 2,
   },
   {
     id: 2,
@@ -65,7 +65,7 @@ const adminList = [
     id: 11,
     fullName: faker.name.findName(),
     urlImage: faker.image.avatar(),
-    profile: 3,
+    userType: 3,
   },
 ];
 
