@@ -1,10 +1,10 @@
 // External dependencies
-const dotenv = require('dotenv');
+// const dotenv = require('dotenv');
 
 // Internal dependencies
-const { path } = require('../../../config/environment');
+// const { path } = require('../../../config/environment');
 
-//dotenv.config({ path });
+// dotenv.config({ path });
 
 const getMongoCredentials = (prefix) => {
   const prefixUppercase = prefix.replace(/-/g, '_').toUpperCase();
