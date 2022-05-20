@@ -9,7 +9,7 @@ const Swagger = require('@fastify/swagger');
 const authDecorators = require('./decorators/auth');
 const configAuth = require('../../../config/auth0');
 const swaggerOptions = require('./utils/swagger');
-
+console.log(process.env);
 // Setup
 const isTestEnv = process.env.NODE_ENV === 'test';
 
