@@ -15,6 +15,7 @@ const mockUserChats = {
     {
       _id: faker.datatype.uuid(),
       placeId: faker.datatype.uuid(),
+      bookingId: faker.datatype.uuid(),
       hostId: hostID,
       customerId: customerID,
       createdAt: faker.datatype.datetime(),
